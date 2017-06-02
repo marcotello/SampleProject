@@ -1,0 +1,11 @@
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\SampleProject.deps.json
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\SampleProject.runtimeconfig.json
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\SampleProject.runtimeconfig.dev.json
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\SampleProject.dll
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\obj\Debug\netcoreapp1.1\SampleProject.csprojResolveAssemblyReference.cache
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\obj\Debug\netcoreapp1.1\SampleProject.AssemblyInfo.cs
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\bin\Debug\netcoreapp1.1\SampleProject.pdb
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\obj\Debug\netcoreapp1.1\SampleProject.dll
+c:\users\marco\documents\visual studio 2017\Projects\SampleProject\SampleProject\obj\Debug\netcoreapp1.1\SampleProject.pdb
