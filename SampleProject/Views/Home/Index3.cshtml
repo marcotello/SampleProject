@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var a = 6;
+    var b = 10;
+
+    var numbers = new List<int> {1,2,3,4,5};
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .red {color: red;}
+        .blue {color: deepskyblue;}
+    </style>
+    <title>Testing Razor Sintax</title>
+</head>
+<body>
+    <div>
+        The variable a value is: @a
+        <br />
+        <br />
+        The variable b value is: @b
+        <br />
+        <br />
+        @for (int i = 0; i < 5; i++)
+        {
+            @i
+        }
+        <br />
+        <br />
+        @foreach (var number in numbers)
+        {
+            @number
+        }
+        <br />
+        <br />
+        @if(true)
+        {
+            var total = a + b;
+            @total;
+
+        }
+        <br />
+        <br />
+        @{ 
+            var cssClass = b % a == 0 ? "red" : "blue";
+        }
+        <div class="@cssClass">
+            Este es el texto en color @cssClass
+        </div>
+    </div>
+</body>
+</html>
