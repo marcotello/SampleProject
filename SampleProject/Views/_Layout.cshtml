@@ -8,8 +8,15 @@
 <body>
     <div>Navigation Menu</div>
     <div>
+        @await  Component.InvokeAsync("CategoryList", new { filter="a" })
+    </div>
+    <div>
         @RenderBody()
     </div>
     <div>Footer Section</div>
+
+    <div>
+        @RenderSection("MySection", false)
+    </div>
 </body>
 </html>
