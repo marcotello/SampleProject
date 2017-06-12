@@ -1,0 +1,35 @@
+﻿@model SampleProject.Models.EmployeeViewModel
+
+<form asp-controller="Employee" asp-action="Save">
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName" />
+    <span asp-validation-for="FirstName"></span>
+    <br />
+    <br />
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <br />
+    <br />
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+    <br />
+    <br />
+    <label asp-for="PasswordConfirmation"></label>
+    <input asp-for="PasswordConfirmation" />
+    <span asp-validation-for="PasswordConfirmation"></span>
+    <br />
+    <br />
+    <label asp-for="Age"></label>
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span>
+    <br />
+    <br />
+    <label asp-for="RetireDate"></label>
+    <input asp-for="RetireDate" />
+    <span asp-validation-for="RetireDate"></span>
+    <br />
+    <br />
+    <input type="submit" value="Save" />
+</form>
