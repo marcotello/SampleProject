@@ -25,5 +25,13 @@ namespace SampleProject.Controllers
             };
             return View(productListViewModel);
         }
+
+        public string Add()
+        {
+            _productRepository.Add(new Entities.Product { ProductID = 3, ProductName = "Monitor", UnitPrice = 50 });
+            _productRepository.Add(new Entities.Product { ProductID = 4, ProductName = "Keyboard", UnitPrice = 15 });
+
+            return _productRepository.GetAll().Count.ToString();
+        }
     }
 }
