@@ -34,7 +34,13 @@ namespace SampleProject
             //services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddDbContext<NorthwindContext>(options =>
                 options.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
-            services.AddSingleton<IProductRepository, EfProductRepository>();
+
+            services.AddDbContext<CustomIdentityDbContext>(options =>
+                options.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
+
+            services.AddIdentity<CustomIdentityUser, CustomIdentityRole>().AddEntityFrameworkStores<CustomIdentityDbContext>().AddDefaultTokenProviders();
+
+            services.AddScoped<IProductRepository, EfProductRepository>();
             services.AddMvc();
         }
 
@@ -42,6 +48,7 @@ namespace SampleProject
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             //app.UseMvcWithDefaultRoute();
+            app.UseIdentity();
             app.UseMvc(ConfigureRoutes);
         }
 
